@@ -3,70 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and flowbite CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- open sans and poppins font integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
     <title>Mobile shop</title>
+
+    <style>
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    font-variant: normal;
+}
+
+
+    </style>
 </head>
-<body class="bg:white dark:bg-gray-900">
+<body class="bg:white dark:bg-gray-900 ">
     <header class="">
     
 
-<nav class=" bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-    <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="images/Dark Logo (1).png" class="h-8" alt="Flowbite Logo">
-       
-    </a>
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
-        <button type="button" class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
-         focus:ring-blue-300 font-medium rounded-lg text-lg w-[160px] px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700
-          dark:focus:ring-blue-800 cursor-pointer">Sign Up</button>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center 
-        text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2
-         focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-          <span class="sr-only">Menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-    </div>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 
-      md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 
-      md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent
-           md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent
-           md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700
-            dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent
-           md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700
-            dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent
-           md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700
-            dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-  </nav>
   
+        <nav class=" bg-[#0D6EFD0d] dark:bg-gray-900 w-full z-20 top-0 start-0">
+            <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="images/Dark Logo (1).png" class="h-8" alt=" Logo">
+               
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
+                <button type="button" class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
+                 focus:ring-blue-300 font-medium rounded-lg text-lg w-[160px] px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700
+                  dark:focus:ring-blue-800 cursor-pointer">Sign Up</button>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center 
+                text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2
+                 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                  <span class="sr-only">Menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+              <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-transparent
+              md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 
+              md:border-0 md:bg-[#0D6EFD0D] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                  <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent
+                   md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent
+                   md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent
+                   md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent
+                   md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700
+                    dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </nav>
     </header>
-    <main class="container mx-auto  mt-10">
+    <main class=" font-[poppins]">
       
-        
+        <!-- Hero section  -->
+        <section class="text-center font-[poppins] space-y-6 py-10  md:pt-32 bg-[#0D6EFD0D] dark:bg-gray-900 ">
+<div class="container mx-auto px-4 py-8 lg:py-16 min-h-[500px] md:min-h-[800px]">
+
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Apple Iphone 13 Pro Max</h1>
+    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+    
+    
+    <a href="#" class="inline-flex items-center justify-center w-[160px] px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+        Buy Now
+        <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+    </a>
+    
+</div>
+
+        </section>
+        <!-- end of hero section  iphone section -->
+         <section class="flex flex-col justify-center items-center -mt-40 lg:-mt-[450px]">
+
+<img class="w-3/4 lg:w-1/2" src="images/Group 48095420.png" alt="">
+         </section>
+         <!-- Search field section -->
+          <section class="text-center flex flex-col justify-center items-center gap-5 px-3">
+            
+<h3 class="text-3xl lg:text-4xl font-semibold dark:text-white">Search your phone</h3>
+
+<form class="w-4/5 lg:w-full lg:max-w-3xl">   
+    <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="search" id="search" class="block w-full p-4 ps-10 text-[16px] text-gray-900 border border-gray-300 rounded-lg bg-[#100F0F0D] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search your phone" required />
+        <button type="submit" class="text-white absolute end-0 bottom-[0px] w-[120px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-r-lg text-lg px-5 py-[14px] dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 border border-blue-700 cursor-pointer">Search</button>
+    </div>
+</form>
+
+          </section>
     </main>
     
 
-<footer class="mt-32 container mx-auto">
+<footer class="mt-32 container mx-auto bg-white dark:bg-gray-900">
     <div class="flex flex-col md:flex-row justify-left items-left gap-6 lg:justify-between container mx-auto">
 <div class="pl-2">
     <img src="images/Dark Logo (1).png" alt="">
@@ -116,7 +181,7 @@
                     <span class="sr-only">Instagram</span>
                 </a>
             </div>
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Join Premium</button>
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg font-[poppins] px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Join Premium</button>
     
         </div>
 
@@ -189,7 +254,7 @@
             </ul>
         </div>
     </div>
-    <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center justify-center text-center">
+    <div class="px-4 py-3 dark:bg-gray-900 md:flex md:items-center justify-center text-center border-t border-slate-200">
         <span class="text-sm text-gray-500 dark:text-gray-300 text-center">© 2025 <a href="https://flowbite.com/">Mobile Shop</a>. All Rights Reserved.
         </span>
        
